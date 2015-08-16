@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>[vim] Install awesome plugins |  My Haoopress Blog</title>
+    <title>OPML parser |  My Haoopress Blog</title>
     <meta name="description" content="My Development diary, I love node.js &amp; javascript">
     <meta name="author" content="JSYang">
     <meta name="keywords" content="javascript" />
@@ -91,19 +91,19 @@
                         <div class="page-header">
                             <p class="meta">
                                 Javascript <!-- 임시 카테고리 -->
-                                <span class="time">Sunday, August 9 2015 3:10 PM</span>
+                                <span class="time">Sunday, August 16 2015 6:38 PM</span>
                             </p>
-                            <h1>[vim] Install awesome plugins</h1>
+                            <h1>OPML parser</h1>
                         </div>
 
                         <div class="pull-right social-area">
                             
-    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="[vim] Install awesome plugins -" data-url="https://reneezll.github.com//post/vimplugins" data-via="">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="OPML parser -" data-url="https://reneezll.github.com//post/opmlparser" data-via="">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                             
     <!-- Place this tag where you want the +1 button to render -->
-    <g:plusone href="/post/vimplugins" size="medium"></g:plusone>
+    <g:plusone href="/post/opmlparser" size="medium"></g:plusone>
 
     <!-- Place this render call where appropriate -->
     <script type="text/javascript">
@@ -116,7 +116,7 @@
 
 
                             
-    <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="https://reneezll.github.com//post/vimplugins"></div>
+    <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="https://reneezll.github.com//post/opmlparser"></div>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -129,26 +129,32 @@
                         </div>
 
                         <div class="markdown-wrapper">
-                            <ul>
-<li>install vim awesome plugins</li>
-</ul>
-<p>How to install the Awesome version?</p><pre><code class=""><span class="variable">$git</span> clone <span class="symbol">git:</span>/<span class="regexp">/github.com/amix</span><span class="regexp">/vimrc.git ~/</span>.vim_runtime
-<span class="variable">$sh</span> ~<span class="regexp">/.vim_runtime/install</span>_awesome_vimrc.sh
-</code></pre><p>(Debian: apt-get install ctags)</p><p>How to install the Basic version?</p><pre><code class=""><span class="variable">$git</span> clone <span class="symbol">git:</span>/<span class="regexp">/github.com/amix</span><span class="regexp">/vimrc.git ~/</span>.vim_runtime
-<span class="variable">$sh</span> ~<span class="regexp">/.vim_runtime/install</span>_basic_vimrc.sh
+                            <p>listparser: rss 주소들을 xml 포맷으로 저장한 파일(opml) 을 파싱해주는 클래스</p><p>*install setuptools(python)</p>
+<h1 id="toc_3"><a href="https://pypi.python.org/pypi/setuptools">https://pypi.python.org/pypi/setuptools</a></h1>
+<pre><code class="">wget https://bootstrap<span class="preprocessor">.pypa</span><span class="preprocessor">.io</span>/ez_setup<span class="preprocessor">.py</span> -O - | sudo python
+</code></pre><p>*install listparser</p><pre><code class=""><span class="variable">$git</span> <span class="keyword">clone</span> https:<span class="comment">//github.com/kurtmckee/listparser.git</span>
+<span class="variable">$cd</span> listparser
+<span class="variable">$sudo</span> python setup.py install
+</code></pre><p>사용법</p><pre><code class="">import listparser
+
+<span class="keyword">if</span> __name__== <span class="string">'__main__'</span>:
+    result =<span class="transposed_variable">listparser.</span>parse(<span class="string">'/home/user/down/flym.opml'</span>)
+    print <span class="string">'length: '</span>+ str(len(<span class="transposed_variable">result.</span>feeds))
+    <span class="keyword">for</span> <span class="built_in">i</span>, item in enumerate(<span class="transposed_variable">result.</span>feeds):
+        print <span class="transposed_variable">item.</span>url
 </code></pre>
                         </div>
                                             
                         <div class="meta clearfix">
                             
                             <div class="pull-right prev-next">
-                                <a href="/post/vimrc" class="button next">vimrc) git commit 시 글쓰기 영역 폭 정하기<i class="icon"></i></a>
+                                <a href="/post/packages" class="button next">linux packages<i class="icon"></i></a>
                             </div>
                             
 
                             
                             <div class="pull-left prev-next">
-                                <a href="/post/upgradetmux" class="button prev"><i class="icon"></i> tmux 업그레이드하기</a>
+                                <a href="/post/myharoopress" class="button prev"><i class="icon"></i> haroopress를 나만의 repository에 가져오기 ...</a>
                             </div>
                             
                         </div>
@@ -298,7 +304,7 @@
         <!--<div class="offset3 span9">-->
             <!--<strong>tags</strong> :-->
             <!---->
-            <!--<a href="/tag/vim">vim</a>&nbsp;-->
+            <!--<a href="/tag/opmlparser">opmlparser</a>&nbsp;-->
             <!---->
         <!--</div>-->
     <!--</div>-->

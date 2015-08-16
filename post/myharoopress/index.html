@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>[vim] Install awesome plugins |  My Haoopress Blog</title>
+    <title>haroopress를 나만의 repository에 가져오기 ... |  My Haoopress Blog</title>
     <meta name="description" content="My Development diary, I love node.js &amp; javascript">
     <meta name="author" content="JSYang">
     <meta name="keywords" content="javascript" />
@@ -91,19 +91,19 @@
                         <div class="page-header">
                             <p class="meta">
                                 Javascript <!-- 임시 카테고리 -->
-                                <span class="time">Sunday, August 9 2015 3:10 PM</span>
+                                <span class="time">Sunday, August 16 2015 5:23 PM</span>
                             </p>
-                            <h1>[vim] Install awesome plugins</h1>
+                            <h1>haroopress를 나만의 repository에 가져오기 ...</h1>
                         </div>
 
                         <div class="pull-right social-area">
                             
-    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="[vim] Install awesome plugins -" data-url="https://reneezll.github.com//post/vimplugins" data-via="">Tweet</a>
+    <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="haroopress를 나만의 repository에 가져오기 ... -" data-url="https://reneezll.github.com//post/myharoopress" data-via="">Tweet</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
                             
     <!-- Place this tag where you want the +1 button to render -->
-    <g:plusone href="/post/vimplugins" size="medium"></g:plusone>
+    <g:plusone href="/post/myharoopress" size="medium"></g:plusone>
 
     <!-- Place this render call where appropriate -->
     <script type="text/javascript">
@@ -116,7 +116,7 @@
 
 
                             
-    <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="https://reneezll.github.com//post/vimplugins"></div>
+    <div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false" data-font="arial" data-href="https://reneezll.github.com//post/myharoopress"></div>
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -130,25 +130,75 @@
 
                         <div class="markdown-wrapper">
                             <ul>
-<li>install vim awesome plugins</li>
+<li><p>github 에서 rhio/haroopress 를 fork하기</p>
+<ul>
+<li>이건 google 에서 검색하면 많이 나오므로 설명 생략</li>
+</ul></li>
+<li><p>자신의 haroopress repository으로 부터 git clone</p></li>
 </ul>
-<p>How to install the Awesome version?</p><pre><code class=""><span class="variable">$git</span> clone <span class="symbol">git:</span>/<span class="regexp">/github.com/amix</span><span class="regexp">/vimrc.git ~/</span>.vim_runtime
-<span class="variable">$sh</span> ~<span class="regexp">/.vim_runtime/install</span>_awesome_vimrc.sh
-</code></pre><p>(Debian: apt-get install ctags)</p><p>How to install the Basic version?</p><pre><code class=""><span class="variable">$git</span> clone <span class="symbol">git:</span>/<span class="regexp">/github.com/amix</span><span class="regexp">/vimrc.git ~/</span>.vim_runtime
-<span class="variable">$sh</span> ~<span class="regexp">/.vim_runtime/install</span>_basic_vimrc.sh
+<pre><code class="">$<span class="built_in">cd</span> ~
+
+$git clone git@<span class="transposed_variable">github.</span>com:reneezll/<span class="transposed_variable">haroopress.</span>git <span class="transposed_variable">reneezll.</span><span class="transposed_variable">github.</span>io
+</code></pre>
+<ul>
+<li>backup config.js of mine</li>
+</ul>
+<pre><code class=""><span class="variable">$mv</span> config.js ~/config.js
+
+<span class="variable">$sudo</span> make init
+</code></pre>
+<ul>
+<li>make init 시 submodule 에러 발생시</li>
+</ul>
+<pre><code class=""><span class="variable">$git</span> rm --cached <span class="built_in">source</span>/data
+<span class="variable">$git</span> rm --cached <span class="built_in">source</span>/themes
+</code></pre>
+<h1 id="toc_2">중간에 사용자 입력은 아무거나</h1>
+<p>정적페이지 repository는 publishing 할 자신의 repository 입력</p><pre><code class="">git@github<span class="preprocessor">.com</span>:reneezll/reneezll<span class="preprocessor">.github</span><span class="preprocessor">.io</span><span class="preprocessor">.git</span>
+</code></pre><p>파일 소유권을 자신의 리눅스 계정으로 변경</p><pre><code class="">$sudo chown -R user<span class="preprocessor">.user</span> ~/reneezll<span class="preprocessor">.github</span><span class="preprocessor">.io</span>
+
+</code></pre>
+<ul>
+<li>repository 입력을 잘못했을 경우, </li>
+</ul>
+<p>_deploy/.git/config 의 url 을 수동으로  수정</p>
+<ul>
+<li>config 복원.</li>
+</ul>
+<pre><code class="">$ <span class="keyword">cp</span> -f ~/config<span class="preprocessor">.js</span> ~/reneezll<span class="preprocessor">.github</span><span class="preprocessor">.io</span>
+</code></pre>
+<ul>
+<li>자신의 source repository 을 git clone</li>
+</ul>
+<pre><code class=""><span class="variable">$cd</span> ~/reneezll.github.io
+<span class="variable">$rm</span> -rf <span class="built_in">source</span>
+<span class="variable">$git</span> clone git@bitbucket.org:hades_yan/haroopress_<span class="built_in">source</span>.git <span class="built_in">source</span>
+</code></pre>
+<ul>
+<li><p>앞으로 수정사항은</p>
+<ul>
+<li>source 디렉토리-&gt; <a href="mailto:git@bitbucket.org">git@bitbucket.org</a>:hades<em>yan/haroopress</em>source.git </li>
+<li>source 를 제외한 haroopress framework -&gt;
+<a href="mailto:git@github.com">git@github.com</a>:reneezll/reneezll.github.io.git
+에 push</li>
+<li>웹페이지 올리기</li>
+</ul></li>
+</ul>
+<pre><code class=""><span class="title">make</span> deploy
+
 </code></pre>
                         </div>
                                             
                         <div class="meta clearfix">
                             
                             <div class="pull-right prev-next">
-                                <a href="/post/vimrc" class="button next">vimrc) git commit 시 글쓰기 영역 폭 정하기<i class="icon"></i></a>
+                                <a href="/post/opmlparser" class="button next">OPML parser<i class="icon"></i></a>
                             </div>
                             
 
                             
                             <div class="pull-left prev-next">
-                                <a href="/post/upgradetmux" class="button prev"><i class="icon"></i> tmux 업그레이드하기</a>
+                                <a href="/post/gitsubmoduleadd" class="button prev"><i class="icon"></i> git submodule add</a>
                             </div>
                             
                         </div>
@@ -298,7 +348,7 @@
         <!--<div class="offset3 span9">-->
             <!--<strong>tags</strong> :-->
             <!---->
-            <!--<a href="/tag/vim">vim</a>&nbsp;-->
+            <!--<a href="/tag/haroopress">haroopress</a>&nbsp;-->
             <!---->
         <!--</div>-->
     <!--</div>-->
