@@ -1,6 +1,6 @@
 ---
 layout: post
-category: markdown
+category: diary
 title: Thank you,Yitao
 tagline: by JSYang
 tags: [jekyll]
