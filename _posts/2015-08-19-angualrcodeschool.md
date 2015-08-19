@@ -8,9 +8,9 @@ tags: [angularjs]
 
  [angular code school]
  
-  - http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro
+  - [동영상](http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro)
   
  [pdf]
  
-  - http://courseware.codeschool.com/shaping-up-with-angular-js/Slides/level01-05.pdf
+  - [pdf파일](http://courseware.codeschool.com/shaping-up-with-angular-js/Slides/level01-05.pdf)
 
