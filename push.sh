@@ -1,4 +1,4 @@
-#!/bin/bash -v
+#!/bin/bash
 echo -n "Input commit message: "
 read input
 git pull
