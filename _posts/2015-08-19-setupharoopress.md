@@ -21,7 +21,7 @@ haroopress 를 자신의 repositoy 백업 하는  방법
 
 * ~/git/rhio/_deploy/.git/config 에서 remote "origin" 부분을 다음과 같이 고침.
 
-```
+~~~~~~~~
 [core]
 	repositoryformatversion = 0
 	filemode = true
@@ -32,4 +32,4 @@ haroopress 를 자신의 repositoy 백업 하는  방법
 	fetch = +refs/heads/*:refs/remotes/origin/*
 [branch "master"]
 	remote = origin
-```
+~~~~~~~~
