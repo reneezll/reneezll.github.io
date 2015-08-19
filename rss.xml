@@ -1,28 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[My Haoopress Blog]]></title><description><![CDATA[My Development diary, I love node.js & javascript]]></description><link>https://reneezll.github.com/</link><image><url>https://reneezll.github.com//public/img/favorite.png</url><title>My Haoopress Blog</title><link>https://reneezll.github.com/</link></image><generator>RSS for Node</generator><lastBuildDate>Tue, 18 Aug 2015 13:17:33 GMT</lastBuildDate><atom:link href="https://reneezll.github.com//rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[[angularjs] code school]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/202173e3a32148541833cb2a1c7ec8c8?r=pg&s=48.jpg&d=identicon"><br/><p> [angular code school]</p>
-<ul>
-<li><p><a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro">http://campus.codeschool.com/courses/shaping-up-with-angular-js/intro</a></p><p>[pdf]</p></li>
-<li><p><a href="http://courseware.codeschool.com/shaping-up-with-angular-js/Slides/level01-05.pdf">http://courseware.codeschool.com/shaping-up-with-angular-js/Slides/level01-05.pdf</a>)</p></li>
-</ul>
-]]></description><link>https://reneezll.github.com//post/angularcodeschool</link><guid isPermaLink="false">angularcodeschool</guid><dc:creator><![CDATA[<a href="" target="_blank">JSYang</a>]]></dc:creator><pubDate>Tue, 18 Aug 2015 12:00:00 GMT</pubDate></item><item><title><![CDATA[w3m: 터미널 웹브라우저]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/202173e3a32148541833cb2a1c7ec8c8?r=pg&s=48.jpg&d=identicon"><br/><p>활용: vim에서 웹페이지 내용 불러오기
-(load web page to vim using w3m)</p><pre><code class="">:r !w3m -dump your-html-file.html
-<span class="attribute">:r !w3m -dump http://www.google.com</span>
-</code></pre>]]></description><link>https://reneezll.github.com//post/w3m</link><guid isPermaLink="false">w3m</guid><dc:creator><![CDATA[<a href="" target="_blank">JSYang</a>]]></dc:creator><pubDate>Sun, 16 Aug 2015 09:45:00 GMT</pubDate></item><item><title><![CDATA[OPML parser]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/202173e3a32148541833cb2a1c7ec8c8?r=pg&s=48.jpg&d=identicon"><br/><p>listparser: rss 주소들을 xml 포맷으로 저장한 파일(opml) 을 파싱해주는 클래스</p><p>*install setuptools(python)</p>
-<h1 id="toc_4"><a href="https://pypi.python.org/pypi/setuptools">https://pypi.python.org/pypi/setuptools</a></h1>
-<pre><code class="">wget https://bootstrap<span class="preprocessor">.pypa</span><span class="preprocessor">.io</span>/ez_setup<span class="preprocessor">.py</span> -O - | sudo python
-</code></pre><p>*install listparser</p>]]></description><link>https://reneezll.github.com//post/opmlparser</link><guid isPermaLink="false">opmlparser</guid><dc:creator><![CDATA[<a href="" target="_blank">JSYang</a>]]></dc:creator><pubDate>Sun, 16 Aug 2015 09:38:00 GMT</pubDate></item><item><title><![CDATA[geeknote 설치하기]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/202173e3a32148541833cb2a1c7ec8c8?r=pg&s=48.jpg&d=identicon"><br/><p>geeknote: 에버노트를 터미널에서 사용하게 해주는 프로그램</p><p>*install python setuptools</p><p><code>$wget https://bootstrap.pypa.io/ez_setup.py -O - | sudo python</code></p>
-<ul>
-<li>install geeknote</li>
-</ul>
-<pre><code class=""> <span class="variable">$https</span><span class="symbol">://github</span>.com/<span class="constant">VitaliyRodnenko</span>/geeknote
- <span class="variable">$git</span> clone <span class="symbol">git:</span>/<span class="regexp">/github.com/</span><span class="constant">VitaliyRodnenko</span>/geeknote.git
- <span class="variable">$cd</span> geeknote/
- <span class="variable">$sudo</span> python setup.py install
- <span class="variable">$geeknote</span> login
- <span class="variable">$geeknote</span> settings --editor vim
- <span class="variable">$geeknote</span> notebook-list
- <span class="variable">$geeknote</span> show <span class="string">"test*"</span>
-</code></pre>]]></description><link>https://reneezll.github.com//post/geeknote</link><guid isPermaLink="false">geeknote</guid><dc:creator><![CDATA[<a href="" target="_blank">JSYang</a>]]></dc:creator><pubDate>Sun, 16 Aug 2015 09:01:00 GMT</pubDate></item><item><title><![CDATA[vimrc) git commit 시 글쓰기 영역 폭 정하기]]></title><description><![CDATA[<img src="http://www.gravatar.com/avatar/202173e3a32148541833cb2a1c7ec8c8?r=pg&s=48.jpg&d=identicon"><br/><p>git commit 시 글쓰기 영역 폭 정하기.</p><p>자신의 .vimrc 파일을 연다.</p><p><code>vi ~/.vimrc</code></p><p>아래 코드를 추가한다.</p><pre><code class=""> <span class="built_in">set</span> ai
- au FileType gitcommit <span class="built_in">set</span> tw=<span class="number">72</span>
- filetype indent plugin <span class="command"><span class="keyword">on</span>
-</span></code></pre>]]></description><link>https://reneezll.github.com//post/vimrc</link><guid isPermaLink="false">vimrc</guid><dc:creator><![CDATA[<a href="" target="_blank">JSYang</a>]]></dc:creator><pubDate>Sun, 16 Aug 2015 08:53:00 GMT</pubDate></item></channel></rss>
+---
+layout: null
+title : RSS Feed
+---
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+        <title>{{ site.title }}</title>
+        <description>{{ site.title }} - {{ site.author.name }}</description>
+        <link>{{ site.production_url }}{{ site.rss_path }}</link>
+        <link>{{ site.production_url }}</link>
+        <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+        <pubDate>{{ site.time | date_to_xmlschema }}</pubDate>
+        <ttl>1800</ttl>
+
+{% for post in site.posts %}
+        <item>
+                <title>{{ post.title }}</title>
+                <description>{{ post.content | xml_escape }}</description>
+                <link>{{ site.production_url }}{{ post.url }}</link>
+                <guid>{{ site.production_url }}{{ post.id }}</guid>
+                <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+        </item>
+{% endfor %}
+
+</channel>
+</rss>
