@@ -24,8 +24,8 @@ Here is the way I did it on Ubuntu 13.04 (Raring Ringtail) and 14.04 (Trusty Tah
 
 (*optional, shows you available versions, 1.7 & 1.8 should be listed)
 
-`sudo apt-cache show tmux`
-
-`sudo apt-get install tmux`
-
-`tmux -V`
+~~~~~~~~
+sudo apt-cache show tmux
+sudo apt-get install tmux
+tmux -V
+~~~~~~~~
