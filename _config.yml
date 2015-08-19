@@ -9,26 +9,26 @@ markdown: kramdown
   
 # The title and tagline is showed on homepage
 #
-title :  Simpleyyt 
-tagline: Yitao's Blog
+title : Programming Tips
+tagline: JS Yang's Blog
 
 # Information about author
 #
 author :
-  name : Yitao Yao
+  name : JS Yang
   
 # Information for contacts showed at on the footer
 #
 contact :
-  e-mail : mailto:simpleyyt@gmail.com
-  Github : https://github.com/Simpleyyt
-  WeiBo : http://www.weibo.com/u/1836017133
-  Google+ : https://plus.google.com/103860633659538888207?rel=author
+  e-mail : mailto:reneezll@gmail.com
+  Github : https://github.com/reneezll
+  Google+ : https://plus.google.com/u/0/115483513686295400187/posts
   
 # Links showed on the footer
 #
 links :
-  Yitao's Blog : http://simpleyyt.github.io/
+  JS Yang's Blog : http://reneezll.github.io/
+  Yitao's Blog(original) : http://simpleyyt.github.io/
 
 # The search engine. Only support google custom search engine.
 #
@@ -68,7 +68,7 @@ auto_loadmore : true
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://simpleyyt.github.io
+production_url : http://reneezll.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -125,11 +125,11 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : duoshuo
+    provider : disqus
     duoshuo :
-      short_name : simpleyyt
+      short_name : 
     disqus :
-      short_name : simpleyyt
+      short_name : reneezllgithubio
     livefyre :
       site_id : 123
     intensedebate :
