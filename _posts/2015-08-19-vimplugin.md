@@ -1,7 +1,7 @@
 ---
 layout: post
 category: linux
-title: [vim] Install awesome plugins
+title: vim -Install awesome plugins
 tagline: by JS Yang
 tags: [vim]
 ---
