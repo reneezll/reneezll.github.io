@@ -1,6 +1,6 @@
 ---
 layout: post
-category: blog
+category: javascript
 title: angularjs  - dashboard 설치하기
 tagline: by JS Yang
 tags: [angularjs]
@@ -29,7 +29,6 @@ $sudo npm install -g grunt-cli
 
 3. On the command prompt run the following commands
 
-- cd `project-directory`
 
 - `npm install` - bower install is ran from the postinstall
 
