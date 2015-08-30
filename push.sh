@@ -7,7 +7,7 @@
 ###########
 input=$1
  
-if [ -z $input ] ; then
+if [ -z "$input" ] ; then
     NOW=$(date +"%m-%d-%Y")
     input=$NOW
 fi  
