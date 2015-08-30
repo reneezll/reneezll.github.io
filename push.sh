@@ -7,7 +7,7 @@
 ###########
 input=$1
  
-if [ -z $comment ] ; then
+if [ -z $input ] ; then
     NOW=$(date +"%m-%d-%Y")
     input=$NOW
 fi  
