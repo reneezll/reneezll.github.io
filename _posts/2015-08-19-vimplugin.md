@@ -9,6 +9,7 @@ tags: [vim]
 * install vim awesome plugins
 
 << customizing >>
+
 How to install the Awesome version?
 
 ~~~~~~~~
@@ -18,7 +19,13 @@ $sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 
 << install dirdiff >>
-1.  cd ~/.vim_runtime
+
+1. Change Directory
+
+~~~~~~~~
+cd ~/.vim_runtime
+~~~~~~~~
+
 
 2. Download dirdiff 
 
@@ -33,6 +40,7 @@ unzip master.zip
 ~~~~~~~~
 
 << install taglist >>
+
 ~~~~~~~~
 git clone https://github.com/vim-scripts/taglist.vim.git  ~/.vim_runtime/sources_non_forked/taglist
 ~~~~~~~~
@@ -48,7 +56,6 @@ $sh ~/.vim_runtime/install_awesome_vimrc.sh
 (Debian: apt-get install ctags)
 
 How to install the Basic version?
-
 
 ~~~~~~~~
 $git clone git://github.com/amix/vimrc.git ~/.vim_runtime
