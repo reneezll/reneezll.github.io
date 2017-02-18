@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: post
 category: haroopress
 title: github 에서 rhio/haroopress 를 fork하기
 tagline: by JSYang
