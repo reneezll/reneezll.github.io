@@ -32,7 +32,7 @@ http://www.next-reports.com/
  - data source 선택 가능
  - 데이터 가공을 위한 디자이너 툴 제공
  - 소스 저장소(https://github.com/nextreports/nextreports-server )
- - ![nextreports](<img width="800px" height="600px">https://cloud.githubusercontent.com/assets/10793470/23335904/825f14f0-fc02-11e6-9091-10328019141d.png</img>)
+ - ![nextreports](https://cloud.githubusercontent.com/assets/10793470/23335904/825f14f0-fc02-11e6-9091-10328019141d.png)
 ## liferay
 
  - 라이프레이 포탈이 오픈 소스로 기반 웹 플랫폼 환경
