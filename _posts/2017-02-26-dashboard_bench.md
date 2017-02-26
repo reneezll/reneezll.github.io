@@ -1,6 +1,6 @@
 ---
 layout: post
-category: markdown
+category: dashboard
 title: Dashboard 사전준비
 tagline: by reneezll
 tags: [dashboard]
