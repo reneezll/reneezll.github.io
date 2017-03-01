@@ -32,6 +32,12 @@ http://www.next-reports.com/
  - data source 선택 가능
  - 데이터 가공을 위한 디자이너 툴 제공
  - 소스 저장소(https://github.com/nextreports/nextreports-server )
+ - 초기 id / pw
+ 
+ | id | pw |
+ | -------- | -------- |
+ | admin    | 1    |
+ 
  - ![nextreports](https://cloud.githubusercontent.com/assets/10793470/23335904/825f14f0-fc02-11e6-9091-10328019141d.png)
 ## liferay
 
