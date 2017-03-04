@@ -1,6 +1,7 @@
 # Simpleyyt
 
 My blog based on Jekyll-Bootstrap.
+Visit http://reneezll.github.io
 
 ## About Jekyll-Bootstrap
 
